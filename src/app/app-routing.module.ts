@@ -7,10 +7,7 @@ const routes: Routes =[
     path: '',
      component: DashboardComponent,
   } ,
-  {
-    path: 'nft-stand',
-    loadChildren: () => import('./nft-stand/nft-stand.module').then(m => m.NftStandModule)
-  },
+  
  
 ];
 
