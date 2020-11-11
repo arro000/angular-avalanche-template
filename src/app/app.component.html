@@ -1,0 +1,31 @@
+ 
+<mat-drawer-container>
+  <mat-drawer #drawer class="" mode="side">
+    <mat-list>
+      <div mat-subheader>Utility</div>
+      <mat-list-item >
+        <mat-icon mat-list-icon>user</mat-icon>
+        <div mat-line>Entra</div>
+        <div mat-line> </div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <div mat-subheader>Wallet</div>
+      <mat-list-item  >
+        <mat-icon mat-list-icon>wallet</mat-icon>
+        <div mat-line>Wallet</div>
+        <div mat-line> zxc</div>
+      </mat-list-item>
+    </mat-list>
+   </mat-drawer>
+   <mat-toolbar color="primary">
+      <div class="">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div> Card view demo
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+
+   
+</mat-drawer-container>

@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+$color-light:(100:#DADBE1);
+$color-dark:#292F36;
+     
+$primary:(
+    50 : #E84042,
+    100 : #E84042,
+    200 : #E84042,
+    300 : #E84042,
+    400 : #E84042,
+    500 : #E84042,
+    600 : #E84042,
+    700 : #E84042,
+    800 : #E84042,
+    900 : #E84042,
+    A100 : #E84042,
+    A200 : #E84042,
+    A400 : #E84042,
+    A700 : #E84042,
+    contrast: (
+        50 :#DADBE1,
+        100 :#DADBE1,
+        200 :#DADBE1,
+        300 :#DADBE1,
+        400 :#DADBE1,
+        500 :#DADBE1,
+        600 :#DADBE1,
+        700 :#DADBE1,
+        800 :#DADBE1,
+        900 :#DADBE1,
+        A100 :#DADBE1,
+        A200 :#DADBE1,
+        A400 :#DADBE1,
+        A700 :#DADBE1,
+    ) );
+
+$accent:(
+    50 : #E76567,
+    100 : #E76567,
+    200 : #E76567,
+    300 : #E76567,
+    400 : #E76567,
+    500 : #E76567,
+    600 : #E76567,
+    700 : #E76567,
+    800 : #E76567,
+    900 : #E76567,
+    A100 : #E76567,
+    A200 : #E76567,
+    A400 : #E76567,
+    A700 : #E76567,
+    contrast: (
+        50 :#DADBE1,
+        100 :#DADBE1,
+        200 :#DADBE1,
+        300 :#DADBE1,
+        400 :#DADBE1,
+        500 :#DADBE1,
+        600 :#DADBE1,
+        700 :#DADBE1,
+        800 :#DADBE1,
+        900 :#DADBE1,
+        A100 :#DADBE1,
+        A200 :#DADBE1,
+        A400 :#DADBE1,
+        A700 :#DADBE1,
+    ));
+$my-app-primary: mat-palette($primary);
+$my-app-accent:  mat-palette($accent, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $color-dark;}

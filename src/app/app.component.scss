@@ -1,0 +1,27 @@
+$color-light:#DADBE1;
+$color-dark:#292F36;
+$primary:#E84042;
+
+$accent:#E76567; 
+html, 
+html, 
+body {
+    height: 100%; 
+    background-color: $color-dark;
+    color: $color-light;
+    
+}
+
+mat-drawer-container{
+    height: 100%;   
+    background-color: $color-dark;
+    color: $color-light;
+
+ }
+mat-drawer{
+    width: 300px;
+    background-color: $color-light;
+}
+mat-icon:hover{
+    background-color: $accent;
+}

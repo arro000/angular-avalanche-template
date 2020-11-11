@@ -1,0 +1,13 @@
+ @import "../../styles.scss";
+
+
+
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    width: 200px;
+    margin:20px;
+    display:inline-block;
+}
